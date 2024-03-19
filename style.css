@@ -1,0 +1,216 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 10px 20px;
+}
+.image-icon {
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0px 15px;
+}
+
+.image-link,
+.gmail-link {
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.image-link:hover,
+.gmail-link:hover {
+  text-decoration: underline;
+}
+
+.column-icon {
+  margin-left: 5px;
+}
+
+.column-icon:hover {
+  background: url(./assets/pictures/circle.svg);
+}
+
+.image-icon:hover {
+  background: url(./assets/pictures/circle.svg);
+}
+
+.google-hero {
+  text-align: center;
+}
+
+.search-icon {
+  color: red;
+}
+
+.search-mic,
+.search-camera {
+  height: 1.5rem;
+}
+
+#search-input {
+  width: 75%;
+  border: none;
+  height: 30px;
+  outline: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gainsboro;
+  width: 84%;
+  max-width: 550px;
+  height: 3rem;
+  padding: 0px 20px;
+  border-radius: 30px;
+  box-shadow: 2px;
+}
+
+.search-container:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.search-buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.goole-button {
+  border: none;
+  background-color: #f8f9fa;
+  margin: 0px 5px;
+  padding: 12px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.goole-button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.google-langs {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.lang {
+  text-decoration: none;
+  color: #1a0dab;
+  margin: 0px 3px;
+  font-size: 13px;
+}
+
+.lang:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f2f3f7;
+  margin-top: 50px;
+  height: 11rem;
+  font-size: 14px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-item,
+.footer-item2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-nig {
+  padding: 0px 30px;
+  padding-top: 1px;
+}
+
+#hidden2 {
+  display: none;
+}
+
+#footer-item1,
+#footer-item2 {
+  text-decoration: none;
+  color: black;
+}
+
+#footer-item1:hover,
+#footer-item2:hover {
+  text-decoration: underline;
+}
+
+#footer-item2 {
+  padding: 0px 8px;
+}
+
+@media (min-width: 664px) {
+  .footer-item2 {
+    display: inline;
+  }
+
+  .footer {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer-item2,
+  .footer-item {
+    display: inline;
+    padding: 0px 0px;
+  }
+
+  .footer-item {
+    margin: 0px 10%;
+  }
+
+  .footer {
+    height: 5rem;
+  }
+
+  #hidden1 {
+    display: none;
+  }
+
+  #hidden2 {
+    display: inline;
+  }
+
+  .footer-links {
+    text-align: start;
+    padding: 0px 26px;
+    /* width: 100%; */
+    text-wrap: nowrap;
+  }
+}
